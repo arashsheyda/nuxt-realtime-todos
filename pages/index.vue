@@ -6,6 +6,7 @@ const { loggedIn } = useUserSession()
 
 <template>
   <UContainer :ui="{ base: 'flex relative overflow-hidden' }">
+    <Globe />
     <div class="py-10 max-w-2xl relative flex flex-col gap-4">
       <h1 class="font-bold text-4xl">
         Welcome to
