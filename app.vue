@@ -1,11 +1,36 @@
 <script setup lang="ts">
-import { socials } from '~/constants'
+import { socials, links } from '~/constants'
 
+const { loggedIn, clear, user } = useUserSession()
 const colorMode = useColorMode()
 
 function toggleColorMode() {
   colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
 }
+
+watch(loggedIn, () => {
+  if (!loggedIn.value) {
+    navigateTo('/')
+  }
+})
+
+const items = [
+  [
+    {
+      label: 'Todos',
+      icon: 'i-heroicons-check-circle',
+      to: '/todos',
+    },
+    ...links,
+  ],
+  [
+    {
+      label: 'Logout',
+      icon: 'i-heroicons-arrow-left-on-rectangle',
+      click: clear,
+    },
+  ],
+]
 
 const card = ref()
 
@@ -49,7 +74,30 @@ onMounted(() => {
           id="actions"
           class="w-full"
         />
-        <!-- TODO: user drop down -->
+        <UButton
+          v-if="!user?.login"
+          to="/api/auth/github"
+          icon="i-simple-icons-github"
+          label="Login with GitHub"
+          color="black"
+          external
+        />
+        <UDropdown
+          v-else
+          :items="items"
+        >
+          <UButton
+            color="white"
+            trailing-icon="i-heroicons-chevron-down-20-solid"
+          >
+            <UAvatar
+              :src="`https://github.com/${user.login}.png`"
+              :alt="user.login"
+              size="2xs"
+            />
+            {{ user.login }}
+          </UButton>
+        </UDropdown>
       </template>
       <NuxtPage :style="{ 'min-height': `${contentHeight}px` }" />
       <template
