@@ -23,6 +23,7 @@
     "eslint": "^9.4.0",
     "nuxt": "^3.11.2",
     "nuxt-auth-utils": "^0.0.25",
+    "nuxt-ngrok": "^0.0.1",
     "three": "^0.165.0",
     "three-globe": "^2.31.0",
     "ufo": "^1.5.3",

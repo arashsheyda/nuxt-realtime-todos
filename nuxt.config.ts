@@ -5,9 +5,15 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
+    'nuxt-ngrok',
     '@vueuse/nuxt',
     'nuxt-auth-utils',
   ],
+
+  ngrok: {
+    authtoken_from_env: true,
+    domain: 'mutual-moose-generous.ngrok-free.app',
+  },
 
   ui: {
     icons: [
