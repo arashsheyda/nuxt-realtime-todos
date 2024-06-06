@@ -1,5 +1,11 @@
+<script setup lang="ts">
+definePageMeta({
+  label: 'Todos',
+})
+</script>
+
 <template>
-  <div>
-    todos
-  </div>
+  <UContainer>
+    <List />
+  </UContainer>
 </template>
