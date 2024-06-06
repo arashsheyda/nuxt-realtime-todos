@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { socials } from '~/constants'
+
 const colorMode = useColorMode()
 
 function toggleColorMode() {
@@ -59,6 +61,15 @@ onMounted(() => {
           class="w-full"
         />
         <div class="flex gap-4">
+          <UButton
+            v-for="link of socials"
+            :key="link.to"
+            square
+            variant="soft"
+            color="black"
+            :icon="link.icon"
+            :to="link.to"
+          />
           <UButton
             square
             variant="soft"
