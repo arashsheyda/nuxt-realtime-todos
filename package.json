@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@iconify-json/ph": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.104",
+    "@nuxt/eslint-config": "^0.3.13",
+    "@nuxt/ui": "^2.16.0",
+    "@types/three": "^0.165.0",
+    "@vueuse/core": "^10.10.0",
+    "@vueuse/nuxt": "^10.10.0",
+    "crossws": "^0.2.4",
+    "eslint": "^9.4.0",
+    "nuxt": "^3.11.2",
+    "nuxt-auth-utils": "^0.0.25",
+    "three": "^0.165.0",
+    "three-globe": "^2.31.0",
+    "ufo": "^1.5.3",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  }
+}
