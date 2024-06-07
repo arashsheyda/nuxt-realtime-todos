@@ -4,9 +4,7 @@
 
 ## Demo
 
-<video height="640" controls>
-	<source src="https://raw.githubusercontent.com/arashsheyda/nuxt-realtime-todos/main/public/nuxt-realtime-todo.mp4" type="video/mp4">
-</video>
+https://github.com/arashsheyda/nuxt-realtime-todos/assets/38922203/349cdb54-8082-4a5f-ab00-062635d7e1f0
 
 ## Setup
 
