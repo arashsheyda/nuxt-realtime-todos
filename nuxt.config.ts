@@ -5,8 +5,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    'nuxt-ngrok',
     '@vueuse/nuxt',
+    '@nuxtjs/ngrok',
     'nuxt-auth-utils',
   ],
 
