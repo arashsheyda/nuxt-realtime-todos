@@ -1,4 +1,4 @@
-# Nuxt Realtime Todos Starter
+# Nuxt Realtime Todos
 
 > Starter Project for creating a real-time todo app with Nuxt in DevEdmonton Society's monthly meetup.
 
