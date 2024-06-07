@@ -2,6 +2,12 @@
 
 > Starter Project for creating a real-time todo app with Nuxt in DevEdmonton Society's monthly meetup.
 
+## Demo
+
+<video height="640" controls>
+	<source src="https://raw.githubusercontent.com/arashsheyda/nuxt-realtime-todos/main/public/nuxt-realtime-todo.mp4" type="video/mp4">
+</video>
+
 ## Setup
 
 ```bash
